@@ -1,6 +1,7 @@
 const form = document.querySelector(".js-form"), 
     input = form.querySelector("input"),
-    greeting = document.querySelector(".js-greetings");
+    greeting = document.querySelector(".js-greetings"),
+    toDoFormShowing = document.querySelector(".js-toDoForm");
 
 const USER_LS = 'currentUser';
 const SHOWING_ON = 'showing';
@@ -24,6 +25,7 @@ function askForName(){
 function paintGreeting(text){
     form.classList.remove(SHOWING_ON);
     greeting.classList.add(SHOWING_ON);
+    toDoFormShowing.classList.add(SHOWING_ON)
     greeting.innerText = `Hello ${text}`;
 }
 

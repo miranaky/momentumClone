@@ -9,17 +9,60 @@ body{
 body {
     color:#ecf0f1;
   }
-  
-  .clicked{
-      color: #7f8c8d;
-  }
+.js-clock{
+    text-align: center;
+    font-size: 70px;
+}
 
-  .form,
-  .greetings {
-      display: none;
-  }
+
+.form,
+.greetings,
+.toDoForm {
+    display: none;
+}
+
+.greeting-title {
+    text-align: center;
+    font-size: 54px;
+    display: block;
+}
+.greeting-input {
+    width: 430px;
+    height: 54px;
+    font-size: 44px;
+    color: #ecf0f1;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid #ecf0f1;
+
+}
+.toDoForm-title {
+    text-align: center;
+    font-size: 44px;
+    display: block;
+}
+
+.toDoForm-input {
+    width: 300px;
+    height: 44px;
+    font-size: 40px;
+    color: #ecf0f1;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid #ecf0f1;
+}
   .showing {
-      display: block;
+      font-size: 40px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: default;
+      margin: 0 auto;
+      margin-bottom: 30px;
   }
 
   @keyframes fadeIn {
